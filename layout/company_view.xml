@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/product_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            style="?android:attr/starStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_label"
+            android:padding="13dp"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/product_label"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="13dp"
+            android:src="@drawable/ett_annons" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView1"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="13dp"
+            android:src="@drawable/facebookcolor" />
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_toRightOf="@id/facebook"
+            android:paddingBottom="10dp"
+            android:paddingLeft="13dp"
+            android:src="@drawable/twittercolor" />
+
+        <ImageView
+            android:id="@+id/student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_toRightOf="@id/twitter"
+            android:paddingBottom="10dp"
+            android:paddingLeft="13dp"
+            android:src="@drawable/untitled1" />
+
+        <ImageView
+            android:id="@+id/youtube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_toRightOf="@id/student"
+            android:paddingBottom="10dp"
+            android:paddingLeft="13dp"
+            android:src="@drawable/youtubecolor" />
+
+        <ImageView
+            android:id="@+id/linked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_toRightOf="@id/youtube"
+            android:paddingBottom="10dp"
+            android:paddingLeft="13dp"
+            android:src="@drawable/linkedincolor" />
+    </RelativeLayout>
+
+</ScrollView>
